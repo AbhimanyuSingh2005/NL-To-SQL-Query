@@ -1,0 +1,18 @@
+[
+  {
+    "IncorrectQuery": "SELECT * FROM campaigns",
+    "CorrectQuery": "The query appears to be correct and should work as is. It selects all columns (`*`) from a table named `campaigns`. \n\nHowever, if you're getting an error, it could be due to a few reasons:\n\n1. The table name is misspelled. Make sure the table name is correct and matches the actual table name in your database.\n2. The table does not exist. Make sure the table exists in your database and you have the necessary permissions to query it.\n3. The database connection is not established. Make sure you have a valid connection to the database before running the query.\n\nHere is the corrected query:\n\n```sql\nSELECT * FROM campaigns;\n```"
+  },
+  {
+    "IncorrectQuery": "SELECT * FROM campaigns",
+    "CorrectQuery": "The query appears to be correct and should work as is. It selects all columns (`*`) from a table named `campaigns`. \n\nHowever, if you're getting an error, it could be due to a few reasons:\n\n1. The table name is misspelled. Make sure the table name is correct and matches the actual table name in your database.\n2. The table does not exist. Make sure the table exists in your database and you have the necessary permissions to query it.\n3. The database connection is not established. Make sure you have a valid connection to the database before running the query.\n\nHere is the corrected query:\n\n```sql\nSELECT * FROM campaigns;\n```"
+  },
+  {
+    "IncorrectQuery": "SELECT * FROM campaigns",
+    "CorrectQuery": "The query appears to be correct. It is selecting all columns (`*`) from a table named `campaigns`."
+  },
+  {
+    "IncorrectQuery": "SELECT * FROM campaigns",
+    "CorrectQuery": "The query appears to be correct. It is selecting all columns (`*`) from a table named `campaigns`."
+  }
+]
