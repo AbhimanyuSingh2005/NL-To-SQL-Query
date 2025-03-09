@@ -14,6 +14,17 @@ def load_json_file(file_name):
         data = json.load(f)
     return data
 
+def load_input_file(file_path):
+    """
+    Load an input file given its full path.
+    
+    :param file_path: Path to the input JSON file.
+    :return: List of dictionaries.
+    """
+    with open(file_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data
+
 if __name__ == "__main__":
     data = load_json_file("train_generate_task.json")
     print(f"Loaded {len(data)} records from train_generate_task.json.")

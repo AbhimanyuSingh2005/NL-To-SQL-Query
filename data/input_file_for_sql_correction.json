@@ -1,18 +1,14 @@
 [
-    {
-      "IncorrectQuery": "SELECT * FROM campaigns",
-      "CorrectQuery": "SELECT * FROM campaigns"
-    },
-    {
-      "IncorrectQuery": "SELECT * FROM campaigns",
-      "CorrectQuery": "SELECT * FROM campaigns"
-    },
-    {
-      "IncorrectQuery": "SELECT * FROM campaigns",
-      "CorrectQuery": "SELECT * FROM campaigns"
-    },
-    {
-      "IncorrectQuery": "SELECT * FROM campaigns",
-      "CorrectQuery": "SELECT * FROM campaigns"
-    }
-  ]
+  {
+      "IncorrectQuery": "SELLECT * FRM campaigns"
+  },
+  {
+      "IncorrectQuery": "SELEKT user_name, email FRM customers WHERE signup_date = '2023-01-01'"
+  },
+  {
+      "IncorrectQuery": "SELECT sum(revenue FROM orders"
+  },
+  {
+      "IncorrectQuery": "SELECT * FROM orders WHRE order_status = 'pending'"
+  }
+]

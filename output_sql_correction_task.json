@@ -1,18 +1,18 @@
 [
   {
-    "IncorrectQuery": "SELECT * FROM campaigns",
-    "CorrectQuery": "The query appears to be correct and should work as is. It selects all columns (`*`) from a table named `campaigns`. \n\nHowever, if you're getting an error, it could be due to a few reasons:\n\n1. The table name is misspelled. Make sure the table name is correct and matches the actual table name in your database.\n2. The table does not exist. Make sure the table exists in your database and you have the necessary permissions to query it.\n3. The database connection is not established. Make sure you have a valid connection to the database before running the query.\n\nHere is the corrected query:\n\n```sql\nSELECT * FROM campaigns;\n```"
+    "IncorrectQuery": "SELLECT * FRM campaigns",
+    "CorrectQuery": "The correct SQL query is:\n\nSELECT * FROM campaigns"
   },
   {
-    "IncorrectQuery": "SELECT * FROM campaigns",
-    "CorrectQuery": "The query appears to be correct and should work as is. It selects all columns (`*`) from a table named `campaigns`. \n\nHowever, if you're getting an error, it could be due to a few reasons:\n\n1. The table name is misspelled. Make sure the table name is correct and matches the actual table name in your database.\n2. The table does not exist. Make sure the table exists in your database and you have the necessary permissions to query it.\n3. The database connection is not established. Make sure you have a valid connection to the database before running the query.\n\nHere is the corrected query:\n\n```sql\nSELECT * FROM campaigns;\n```"
+    "IncorrectQuery": "SELEKT user_name, email FRM customers WHERE signup_date = '2023-01-01'",
+    "CorrectQuery": "A nice challenge!\n\nThe NL query is written in a non-standard syntax, which is not valid SQL. Here's the corrected SQL query:\n\nSELECT user_name, email\nFROM customers\nWHERE signup_date = '2023-01-01'\n\nNote the following corrections:\n\n* \"SELEKT\" should be \"SELECT\"\n* \"FRM\" should be \"FROM\"\n* The query is missing the table aliases for the columns \"user_name\" and \"email\", which are not necessary in this case since they are the only columns being selected."
   },
   {
-    "IncorrectQuery": "SELECT * FROM campaigns",
-    "CorrectQuery": "The query appears to be correct. It is selecting all columns (`*`) from a table named `campaigns`."
+    "IncorrectQuery": "SELECT sum(revenue FROM orders",
+    "CorrectQuery": "SELECT SUM(revenue) FROM orders"
   },
   {
-    "IncorrectQuery": "SELECT * FROM campaigns",
-    "CorrectQuery": "The query appears to be correct. It is selecting all columns (`*`) from a table named `campaigns`."
+    "IncorrectQuery": "SELECT * FROM orders WHRE order_status = 'pending'",
+    "CorrectQuery": "The correct SQL query is:\n\nSELECT * FROM orders WHERE order_status = 'pending'\n\nThe NL query is already correct, it's just a typo in the SQL query. The correct SQL query is the same as the NL query, with the correct keyword \"WHERE\" instead of \"WHRE\"."
   }
 ]
