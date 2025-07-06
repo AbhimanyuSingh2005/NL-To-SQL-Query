@@ -47,7 +47,6 @@ Our AI-powered agent can:
 ## 🔄 Workflow
 
 ![Workflow Diagram](https://github.com/Aryansrivastava07/NL_to_SQL/blob/main/workflow.jpg))  
-<sub><i>Workflow</i></sub>
 
 ### Step-by-Step Breakdown
 
@@ -81,7 +80,7 @@ pip install -r requirements.txt
 
 ```
 
-🧪 Example Usage
+### 🧪 Example Usage
 from sql_agent import generate_sql
 
 query = "Show me the top 5 customers by revenue in 2023"
@@ -90,18 +89,18 @@ print(sql_output)
 
 
 
-📈 Impact
+### 📈 Impact
 - ⏱️ Saves time and reduces human error in SQL writing
 - 🧩 Modular and scalable architecture
 - 🌍 Makes data access more inclusive for non-technical users
 
-🤝 Contributing
+### 🤝 Contributing
 We welcome contributions! Feel free to fork the repo, submit issues, or open pull requests to improve the system.
 
-📣 Call to Action
+#### 📣 Call to Action
 We’re excited to see how this technology can evolve! Contributions, feedback, and collaborations are welcome to help build smarter, more intuitive data systems.
 
-📜 License
+### 📜 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
