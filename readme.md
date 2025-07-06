@@ -46,9 +46,9 @@ Our AI-powered agent can:
 
 ## 🔄 Workflow
 
-![Workflow Diagram](https://github.com/Aryansrivastava07/NL_to_SQL/blob/main/workflow.jpg))  
+![Workflow Diagram](https://github.com/Aryansrivastava07/NL_to_SQL/blob/main/workflow.jpg) 
 
-### Step-by-Step Breakdown
+## Step-by-Step Breakdown
 
 1. **Input Processing**  
    - Load training and inference data from JSON files  
