@@ -46,7 +46,7 @@ Our AI-powered agent can:
 
 ## 🔄 Workflow
 
-![Workflow Diagram]([https://your-image-link-here.com/workflow.png](https://drive.google.com/file/d/1_Ijma7M6hOPWAiHtJnSzjDkrQFEUdJKa/view?usp=sharing))  
+![Workflow Diagram](https://github.com/Aryansrivastava07/NL_to_SQL/blob/main/workflow.jpg))  
 <sub><i>Workflow</i></sub>
 
 ### Step-by-Step Breakdown
