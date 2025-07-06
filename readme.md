@@ -79,7 +79,7 @@ git clone https://github.com/Aryansrivastava07/NL_to_SQL.git
 cd NL_to_SQL
 pip install -r requirements.txt
 
-
+```
 
 🧪 Example Usage
 from sql_agent import generate_sql
