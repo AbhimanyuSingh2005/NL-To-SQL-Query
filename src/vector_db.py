@@ -7,10 +7,16 @@ from src.data_loader import load_json_file
 
 def build_vector_database(dataset, prefix, field_name, model_name="all-MiniLM-L6-v2"):
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    root_dir = os.path.join(current_dir, "..")
-    index_file = os.path.join(root_dir, f"{prefix}_vector_index.faiss")
-    embeddings_file = os.path.join(root_dir, f"{prefix}_embeddings.npy")
-    training_data_file = os.path.join(root_dir, f"{prefix}_training_data.json")
+    # Artifacts are now in the 'artifacts' folder at the project root
+    artifacts_dir = os.path.join(current_dir, "..", "artifacts")
+    
+    # Ensure artifacts directory exists
+    if not os.path.exists(artifacts_dir):
+        os.makedirs(artifacts_dir)
+
+    index_file = os.path.join(artifacts_dir, f"{prefix}_vector_index.faiss")
+    embeddings_file = os.path.join(artifacts_dir, f"{prefix}_embeddings.npy")
+    training_data_file = os.path.join(artifacts_dir, f"{prefix}_training_data.json")
     
     model = SentenceTransformer(model_name)
     

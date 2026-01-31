@@ -9,8 +9,8 @@ from src.vector_db import build_vector_database
 from src.prompt_builder import build_prompt_with_retrieval
 
 def generate_sqls(data):
-    API_KEY = "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"
-    MODEL = "llama3-8b-8192"
+    API_KEY = "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"
+    MODEL = "llama-3.1-8b-instant"
 
     gen_training_data = load_json_file("train_generate_task.json")
     index, embed_model, gen_training_data = build_vector_database(gen_training_data, prefix="gen", field_name="NL", model_name="all-MiniLM-L6-v2")
@@ -34,8 +34,10 @@ def generate_sqls(data):
     return sql_statements
 
 def correct_sqls(data):
-    API_KEY = "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"
-    MODEL = "llama3-8b-8192"
+    API_KEY = os.environ.get("GROQ_API_KEY")
+    if not API_KEY:
+        raise ValueError("GROQ_API_KEY environment variable not set")
+    MODEL = "llama-3.1-8b-instant"
 
     corr_training_data = load_json_file("train_query_correction_task.json")
     index, embed_model, corr_training_data = build_vector_database(corr_training_data, prefix="corr", field_name="IncorrectQuery", model_name="all-MiniLM-L6-v2")
@@ -106,10 +108,10 @@ def main():
     assert len(data_2) == len(corrected_sqls)
     assert len(data_1) == len(sql_statements)
     
-    with open('output_sql_correction_task.json', 'w') as f:
+    with open('outputs/output_sql_correction_task.json', 'w') as f:
         json.dump(corrected_sqls, f)
     
-    with open('output_sql_generation_task.json', 'w') as f:
+    with open('outputs/output_sql_generation_task.json', 'w') as f:
         json.dump(sql_statements, f)
     
     return generate_sqls_time, correct_sqls_time
