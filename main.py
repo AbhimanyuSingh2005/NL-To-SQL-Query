@@ -9,7 +9,7 @@ from src.vector_db import build_vector_database
 from src.prompt_builder import build_prompt_with_retrieval
 
 def generate_sqls(data):
-    API_KEY = "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"
+    API_KEY = "groq_key"
     MODEL = "llama-3.1-8b-instant"
 
     gen_training_data = load_json_file("train_generate_task.json")
